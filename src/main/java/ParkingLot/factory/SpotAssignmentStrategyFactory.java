@@ -9,7 +9,7 @@ public class SpotAssignmentStrategyFactory {
     public static SpotAssignmentStrategy getSpotAssignmentStrategyForType(SpotAssignmentStrategyType spotAssignmentStrategyType){
         if (spotAssignmentStrategyType.equals(SpotAssignmentStrategyType.NEAREST)){
             return new NearestSpotAssignmentStrategy();
-        } else if (spotAssignmentStrategyType.equals(SpotAssignmentStrategyType.NEAREST)) {
+        } else if (spotAssignmentStrategyType.equals(SpotAssignmentStrategyType.CHEAPEST)) {
             return new CheapestSpotAssignmentStrategy();
         }else {
             return null;
